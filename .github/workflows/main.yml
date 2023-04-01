@@ -17,9 +17,9 @@ jobs:
       steps:
         - name: Git clone our repository
           uses: actions/checkout@v1
-      # try running till here    
-      #  - name: create ZIP deployment pacakge
-      #   uses: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x ".git"
+    
+        - name: create ZIP deployment pacakge
+          uses: zip -r ${{ env.DEPLOY_PACKAGE_NAME }} ./ -x ".git"
           
       #  - name: Configure my AWS Credentials
        #   uses: aws-actions/configure-aws-credentials@v1
